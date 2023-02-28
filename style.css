@@ -71,6 +71,14 @@ nav{
   font-size: 52px;
 }
 
+.text-box h1::after{
+  content: '';
+  width: 40%;
+  height: 2px;
+  background: #36d8f4;
+  display:block;
+}
+
 .hero-btn {
   display:inline-block;
   text-decoration: none;
@@ -141,7 +149,7 @@ nav .material-icons{
 .classes h1 {
   font-size: 52px;
   font-weight: 600;
-  color:#777;
+  color:#000000;
 }
 
 .classes h1::after{
@@ -185,6 +193,15 @@ nav .material-icons{
 .classes-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
+
+.surf-img {
+  width: 95%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;}
 
 /*
   display:flex;
