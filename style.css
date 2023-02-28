@@ -2,15 +2,15 @@
   CSS File
 */
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   font-family: 'Raleway', sans-serif;
 }
 
 .header {
   min-height: 95vh;
-  width:100%;
+  width: 100%;
   background-image: linear-gradient(rgba(164, 165, 235, 0.116), rgba(164, 235, 217, 0.408)), url(https://images.unsplash.com/photo-1557511073-52a2f498318f);
   background-size: 130%;
   background-position: left;
@@ -18,49 +18,49 @@
 
 }
 
-nav{
-  display:flex;
+nav {
+  display: flex;
   padding: 10px;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-items { 
+.nav-items {
   flex: 1;
   text-align: right;
 
 }
 
-.nav-items ul li{
+.nav-items ul li {
   list-style: none;
-  display:inline-block;
+  display: inline-block;
   padding: 8px 10px;
   position: relative;
 }
 
-.nav-items ul li a{
-  color:white;
+.nav-items ul li a {
+  color: white;
   text-decoration: none;
   font-size: 20px;
 }
 
-.nav-items ul li::after{
+.nav-items ul li::after {
   content: '';
   width: 0%;
   height: 2px;
   background: #36d8f4;
-  display:block;
+  display: block;
   margin: auto;
   transition: 0.5s;
 }
 
-.nav-items ul li:hover::after{
+.nav-items ul li:hover::after {
   width: 100%;
 }
 
 .text-box {
   width: 90%;
-  color:white;
+  color: white;
   position: absolute;
   top: 30%;
   left: 5%;
@@ -71,16 +71,16 @@ nav{
   font-size: 52px;
 }
 
-.text-box h1::after{
+.text-box h1::after {
   content: '';
   width: 40%;
   height: 2px;
   background: #36d8f4;
-  display:block;
+  display: block;
 }
 
 .hero-btn {
-  display:inline-block;
+  display: inline-block;
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
@@ -92,26 +92,26 @@ nav{
 
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
   border: 1px solid #36d8f4;
   background: #36d8f4;
   transition: 1s;
 }
 
-nav .material-icons{
+nav .material-icons {
   display: none;
 }
 
-@media(max-width: 700px){
-  .text-box h1{
+@media screen and (max-width: 700px) {
+  .text-box h1 {
     font-size: 20px;
   }
 
-  .nav-items ul li{
+  .nav-items ul li {
     display: block;
   }
 
-  .nav-items{
+  .nav-items {
     position: absolute;
     background: #36d8f4;
     height: 100vh;
@@ -123,23 +123,23 @@ nav .material-icons{
     transition: 1s;
   }
 
-  nav .material-icons{
+  nav .material-icons {
     display: block;
-    color:#fff;
+    color: #fff;
     margin: 10px;
     font-size: 30px;
-    cursor:pointer;
+    cursor: pointer;
   }
 
-  .nav-items ul{
+  .nav-items ul {
     padding: 25px;
   }
-  
+
 }
 
 /* classes */
 
-.classes{
+.classes {
   width: 90%;
   margin: auto;
   text-align: center;
@@ -149,15 +149,15 @@ nav .material-icons{
 .classes h1 {
   font-size: 52px;
   font-weight: 600;
-  color:#000000;
+  color: #000000;
 }
 
-.classes h1::after{
+.classes h1::after {
   content: '';
   width: 55%;
   height: 2px;
   background: #36d8f4;
-  display:block;
+  display: block;
   margin: auto;
 }
 
@@ -167,7 +167,7 @@ nav .material-icons{
 }
 
 .classes p {
-  color:#777;
+  color: #777;
   font-size: 16px;
   font-weight: 200;
   line-height: 20px;
@@ -201,7 +201,8 @@ nav .material-icons{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;}
+  align-items: center;
+}
 
 /*!
   display:flex;
