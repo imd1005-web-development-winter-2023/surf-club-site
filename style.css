@@ -167,7 +167,7 @@ nav .material-icons {
 }
 
 .classes p {
-  color: #777;
+  color: #464646;
   font-size: 16px;
   font-weight: 200;
   line-height: 20px;
@@ -234,7 +234,7 @@ nav .material-icons {
 }
 
 .blog p {
-  color: #777;
+  color: #464646;
   font-size: 16px;
   font-weight: 200;
   line-height: 20px;
@@ -311,7 +311,7 @@ nav .material-icons {
 }
 
 .about p {
-  color: #404040;
+  color: #282828;
   font-size: 18px;
   font-weight: 200;
   line-height: 20px;
@@ -379,7 +379,7 @@ nav .material-icons {
 }
 
 .contact p {
-  color: #404040;
+  color: #282828;
   font-size: 18px;
   font-weight: 200;
   line-height: 20px;
@@ -402,12 +402,21 @@ nav .material-icons {
 .contactform input[type=text], textarea {
   width: 100%; 
   padding: 15px;
-  border: 1px solid #777; 
+  border: 1px solid #282828; 
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px; 
   resize: both;
+}
+
+.contactform input[type=submit]{
+  padding:5px 15px; 
+  background:#ffffff; 
+  border: 2px solid #368ca0;
+  border-radius: 5px; 
+  color: #368ca0;
+  font-size: large;
 }
 
 /* Footer */
@@ -437,7 +446,7 @@ nav .material-icons {
 .subscribe input[type=text]{
   width: 100%;
   padding: 2px;
-  border: 1px solid #777;
+  border: 1px solid #282828;
   background-color: #fff;
   border-radius: 4px; 
   box-sizing: border-box; 
@@ -454,7 +463,8 @@ html {
 }
 
 .arrow{
-  text-align: right;
-  align-items: right;
+  margin-left: auto;
+  height: 50px;
+  padding: 10px;
   right:0;
 }
