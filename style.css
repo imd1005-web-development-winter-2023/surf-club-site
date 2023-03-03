@@ -18,6 +18,8 @@
 
 }
 
+
+
 nav {
   display: flex;
   padding: 10px;
@@ -91,6 +93,7 @@ nav {
   cursor: pointer;
 
 }
+
 
 .hero-btn:hover {
   border: 1px solid #36d8f4;
@@ -402,7 +405,9 @@ nav .material-icons {
 .contactform input[type=text], textarea {
   width: 100%; 
   padding: 15px;
-  border: 1px solid #282828; 
+  border: 0.5px solid #368ca0;
+  background: #f3fdff;
+  color:#282828;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -411,12 +416,15 @@ nav .material-icons {
 }
 
 .contactform input[type=submit]{
-  padding:5px 15px; 
-  background:#ffffff; 
-  border: 2px solid #368ca0;
-  border-radius: 5px; 
+  display: inline-block;
+  text-decoration: none;
   color: #368ca0;
-  font-size: large;
+  border: 1px solid #368ca0;
+  background: #f3fdff;
+  padding: 10px 35px;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -446,12 +454,24 @@ nav .material-icons {
 .subscribe input[type=text]{
   width: 100%;
   padding: 2px;
-  border: 1px solid #282828;
-  background-color: #fff;
-  border-radius: 4px; 
+  border: 1px solid #ffffff;
+  background: #f3fdff;
+  color:#282828;
   box-sizing: border-box; 
   margin-top: 6px;
   margin-bottom: 16px;
+}
+
+.subscribe input[type=submit]{
+  display: inline-block;
+  text-decoration: none;
+  color: #368ca0;
+  border: 1px solid #368ca0;
+  background: #f3fdff;
+  padding: 2px 16px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
 }
 
 .footerlogo {
