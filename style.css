@@ -204,35 +204,139 @@ nav .material-icons {
   align-items: center;
 }
 
-/*!
-  display:flex;
-  justify-content: space-between;
-  align-items: top;
-  padding: 10px;
-  color:#ffffffb0;
+/* blog */
+
+.blog {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.blog h1 {
+  font-size: 52px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.blog h1::after {
+  content: '';
+  width: 55%;
+  height: 2px;
+  background: #36d8f4;
+  display: block;
+  margin: auto;
+}
+
+.blog h3 {
+  color: #000000;
+  font-weight: 400;
+}
+
+.blog p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  padding: 15px;
+}
+
+.blog-col{
+  flex-basis: 32%;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-col img{
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.layer{
+  background: rgba(133, 197, 222, 0.9);
+  height: 27%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.layer h3{
+  text-align: center;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+}
+
+
+.layer i {
   font-size: 30px;
-  
-}
-
-.nav-items {
-  font-size: 20px;
-  float: right;
+  cursor: pointer;
+  color: #fff;
 }
 
 
-.logo {
-  font-size: larger;
-  font-style: oblique;
+/* about */
 
+.about {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
 }
 
-.hero {
-  background: #cbf0f8;
+.about h1 {
+  font-size: 52px;
+  font-weight: 600;
+  color: #000000;
 }
 
-.hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.about h1::after {
+  content: '';
+  width: 55%;
+  height: 2px;
+  background: #36d8f4;
+  display: block;
+  margin: auto;
+}
+
+.about h3 {
+  color: #000000;
+  font-weight: 400;
+}
+
+.about p {
+  color: #404040;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 20px;
+  padding: 15px;
+}
+
+.aboutbox{
+  display:flex;
+  flex-direction: row;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+
+.desc {
+  text-align: left;
+}
+
+.aboutbox img{
+  width: 40%;
+  padding: 20px;
   height: 600px;
-  padding: 10px;
-}*/
+  object-fit: cover;
+}
+
+.vertical-line {
+  border-left: 2px solid rgb(200, 200, 200);
+  height: 600px;
+}
