@@ -182,7 +182,7 @@ nav .material-icons {
 
 .classes-col {
   flex-basis: 30%;
-  background: #e6f5ff;
+  background: #c2f4fd;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 15px 5px;
@@ -339,4 +339,122 @@ nav .material-icons {
 .vertical-line {
   border-left: 2px solid rgb(200, 200, 200);
   height: 600px;
+  padding: 20px;
+}
+
+/*Contact*/
+
+.contact {  
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contactbox {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+
+.contact h1 {
+  font-size: 52px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.contact h1::after {
+  content: '';
+  width: 55%;
+  height: 2px;
+  background: #36d8f4;
+  display: block;
+  margin: auto;
+}
+
+.contact h3 {
+  color: #000000;
+  font-weight: 400;
+}
+
+.contact p {
+  color: #404040;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 20px;
+  padding: 15px;
+}
+
+.cdesc {
+  width: 600px;
+  text-align: left;
+
+}
+
+.contactform {
+  padding: 50px;
+  border-radius: 30px;
+  background-color: #c2f4fd;
+  padding: 20px;
+}
+
+.contactform input[type=text], textarea {
+  width: 100%; 
+  padding: 15px;
+  border: 1px solid #777; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: both;
+}
+
+/* Footer */
+
+.footerbox{
+  color: white;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-around;
+  background-color: #368ca0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.contact-info i{
+  position: relative;
+  padding:3px;
+  top: 5px;
+  left: -5px;
+  cursor: pointer;
+}
+
+.subscribe input[type=text]{
+  width: 100%;
+  padding: 2px;
+  border: 1px solid #777;
+  background-color: #fff;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.footerlogo {
+  height: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.arrow{
+  text-align: right;
+  align-items: right;
+  right:0;
 }
