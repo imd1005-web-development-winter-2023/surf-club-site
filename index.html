@@ -1,29 +1,272 @@
 <!DOCTYPE html>
+<!--Website needs:
+Header
+Logo
+Navigation links
+Minimum of two navigation menu items
+
+Main
+Hero section
+Three (3) additional content sections
+HTML form such as a Contact form
+with a minimum of one input element and one submit button
+the form can be placed anywhere on the page, either embedded in another section of content or as it's own section of content
+
+Footer
+Logo
+Year and Copyright symbol
+Optional: Navigation links, address, contact information, other footer elements
+-->
+
+
 <html lang="en-ca">
-  <head>
-    <!-- Set the page title -->
-    <title>Assignment 02</title>
 
-    <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" />
+<head>
+  <!-- Set the page title -->
+  <title>Assignment 02 - Ray R.</title>
 
-    <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="UTF-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- We are using a CSS Reset file to standardize browser default css -->
+  <link rel="stylesheet" href="reset.css" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- This is where all of our awesome CSS code goes! -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+  
+</head>
+
+<body>
+  <section class="header" id="head">
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img style="height:80px;" src="LogoAltText.png" alt="Wave logo"> </a>
+      </div>
+      <div class="nav-items" id="navItems">
+        <i class="material-icons" onclick="hideMenu()">close</i>
+        <ul>
+          <li><a href="#head"><strong>Home</strong></a></li>
+          <li><a href="#about"><strong>About Us</strong></a></li>
+          <li><a href="#classes"><strong>Surfing Classes</strong></a></li>
+          <li><a href="#blog"><strong>Blog</strong></a></li>
+          <li><a href="#contact"><strong>Contact Us</strong></a></li>
+        </ul>
+
+      </div>
+      <i class="material-icons" onclick="showMenu()">menu</i>
+
+    </nav>
+
+
+    <div class="text-box">
+      <h1>Surf among friends.</h1> <br>
+      <p>Maroubra Wave is the country's biggest dedicated surfing club.
+        <br>We offer classes, equipment, and surfing parties, so you never have to ride the wave alone.
+      </p>
+      <br>
+      <a href="#about" class="hero-btn">Learn more about us here!</a>
+    </div>
+  </section>
+
+
+  
+  <main>
+
+    <!--About Us-->
+    <section class="about" id="about">
+      <h1>About Us</h1> <br><br>
+      
+      <div class="aboutbox">
+        <img src="https://images.unsplash.com/photo-1612002171113-55d6b800c59c" alt="grayscale surfer image">
+        <div class="vertical-line"></div>
+        <div class="desc"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates illum cumque, molestias sunt laborum ullam dolore temporibus? 
+          Quis sapiente illum non, laborum fugit possimus, dolorum voluptatem natus, repudiandae sequi qui? <br><br>Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Architecto facilis harum eos inventore dolore, magni doloremque commodi, laborum, consequatur corrupti mollitia suscipit? 
+          Quisquam suscipit quis voluptas quia explicabo possimus quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates labore, ea, 
+          quidem animi modi sapiente repellendus ducimus neque rem doloribus laudantium molestias similique omnis consequuntur error nostrum nam eius.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, repellendus consequuntur adipisci incidunt dolor debitis distinctio quam optio 
+          laboriosam cupiditate maxime commodi corporis veniam vero error aut id. Illo, voluptas. <br><br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia accusantium neque reprehenderit? 
+          Eveniet non eaque illum laudantium minima saepe molestias ducimus atque ex fuga! Suscipit commodi nostrum harum necessitatibus delectus! 
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, officiis. Corporis consequuntur non eveniet nisi pariatur optio tempore aliquam fugit beatae? 
+          Harum minus voluptatibus minima facere architecto dolores quaerat rerum?
+          <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi optio exercitationem perspiciatis quam voluptatem quaerat numquam sed hic, vel autem labore voluptas reiciendis nemo nisi consectetur ipsum facilis, illo saepe.
+          <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quidem? Praesentium eligendi repudiandae, quia voluptatem nam quibusdam neque adipisci iste vitae consectetur, veniam et labore hic. Officiis similique possimus nostrum?
+        </p></div>
+      </div>
+    </section>
+
+
+    <!-- Classes -->
+    <section id="classes" class="classes">
+      <h1>Our Classes</h1><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br>
+
+      <img src="https://images.unsplash.com/photo-1530870110042-98b2cb110834" alt="Photo of man surfing."
+        class="surf-img">
+
+      <div class="row">
+        <div class="classes-col">
+          <h3>Beginner</h3>
+          <p>Proin sed nibh rhoncus, convallis dui ut, laoreet arcu. Quisque rhoncus laoreet est, vitae interdum est
+            volutpat lacinia. Aenean malesuada a ante pharetra venenatis. Integer eu leo porta, porta ipsum eu, mollis
+            arcu. Fusce ac leo nec elit suscipit viverra. </p>
+        </div>
+        <div class="classes-col">
+          <h3>Intermediate</h3>
+          <p>Nulla felis enim, pharetra non imperdiet vel, facilisis eget lectus. Phasellus augue quam, pellentesque
+            pharetra mauris eget, consequat viverra leo. Praesent vitae vestibulum elit, non maximus nulla. In sit amet
+            libero tortor. Proin augue orci, lobortis vestibulum fringilla vel, efficitur vitae tellus. </p>
+        </div>
+        <div class="classes-col">
+          <h3>Advanced</h3>
+          <p>Duis quis massa hendrerit, laoreet lacus ut, aliquet turpis. Suspendisse ex tellus, gravida nec convallis
+            in, faucibus in eros. Ut orci orci, placerat eget massa nec, mattis tincidunt metus. </p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!--Blog-->
+    <section class="blog" id="blog">
+      <h1>Our Blog</h1> <br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, sunt fugiat. Sint voluptatibus architecto modi consequuntur explicabo hic molestiae? Adipisci libero officia laudantium quibusdam est unde perferendis tempora facilis explicabo?</p>
     
-    <!-- Specifies the document mode for Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <div class="row">
+        <div class="blog-col">
+          <img src="https://thumbnails.production.thenounproject.com/6d7WDfYlNBo9i3FapC3fPPyapz8=/fit-in/1000x1000/photos.production.thenounproject.com/photos/8FC71809-C48C-4D33-8FBA-BFFB21ADC34D.jpg" alt="">
+          <div class="layer">
+            <h3><strong>What is proper attire to wear surfing, anyways?</strong></h3>
+            <i class="material-icons" >arrow_forward</i>
+          </div>
+        </div>
+        <div class="blog-col">
+          <img src="https://thumbnails.production.thenounproject.com/oIngA12GkWDno0fnpDIEBqF6bmE=/fit-in/1000x1000/photos.production.thenounproject.com/photos/88BDE9A0-B90B-4C4D-B684-7FFC3941262D.jpg" alt="">
+          <div class="layer">
+            <h3><strong>Why is it important to stretch before surfing?</strong></h3>
+            <i class="material-icons" >arrow_forward</i>
+          </div>
+        </div>
+        <div class="blog-col">
+          <img src="https://thumbnails.production.thenounproject.com/SNHqckWc_iaQdIs5uGvLT2Yvssk=/fit-in/1000x1000/photos.production.thenounproject.com/photos/man_surfing_on_sea_waves-scopio-149ab496-8274-4a0c-855d-71766988818c.jpg" alt="">
+          <div class="layer">
+            <h3><strong>The Riptide: what is it, and how can it help you surf?</strong></h3>
+            <i class="material-icons" >arrow_forward</i>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="reset.css" />
 
-    <!-- This is where all of our awesome CSS code goes -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--
+    <!--Contact-->
 
-      YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+    <section class="contact" id="contact">
+      <h1>Contact Us</h1><br>
 
-    -->
-  </body>
+      <div class="contactform">
+        <form action="">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+
+          <label for="email">Email address:</label><br>
+          <input type="text" id="email" name="email"><br>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="What's on your mind?" style="height:200px"></textarea>
+
+          <p>Would you like us to follow up on your request?</p>
+
+          <input type="radio" id="yes" name="choice" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="choice" value="no">
+          <label for="no">No</label>
+
+          <br><br>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      
+    </section>
+
+  </main>
+  <br><br>
+
+<!--Footer-->
+
+  
+  <footer>
+
+    <section>
+      <div><a href="#head">
+       <img class="arrow" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/dlxilt5jgoifkkoxlyde" alt="">
+      </a></div>
+    </section>
+
+
+    <div class="footerbox">
+      <br><br><br>
+
+      <div class="footerlogo">
+        <a href="index.html"><img style="height:140px;" src="LogoW.png" alt="Wave Logo"> </a></div>
+
+      <div class="copyright">
+        Powered By <a href="https://github.com/">GitHub</a> <br>© 2023 All Rights Reserved <br>Made By Ray R.
+      </div>
+
+      <div class="contact-info">
+        <i class="material-icons" >home</i>
+        Sydney, Australia <br>
+        <i class="material-icons" >phone</i>
+        +99 999-9999 <br> 
+        <i class="material-icons" >mail</i>
+        contact@maroubrawave.au <br>
+
+      </div>
+
+      <div class="subscribe">
+        <form action="">
+          <label for="email">Subscribe to our newsletter:</label><br>
+          <input type="text" id="email" name="email"><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      
+        
+    </div>
+
+
+
+  </footer>
+
+  <!-- Hey Prof! I tried to add some JS from a tutorial I watched. Hope this is okay.-->
+  <!-- JS FOR TOGGLING MENU-->
+  <script>
+    let navItems = document.getElementById("navItems");
+    function showMenu() {
+      navItems.style.right = "0";
+    }
+    function hideMenu() {
+      navItems.style.right = "-200px";
+    }
+  </script>
+
+
+</body>
+
 </html>
